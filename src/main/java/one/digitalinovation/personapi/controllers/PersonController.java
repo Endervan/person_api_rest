@@ -20,7 +20,7 @@ public class PersonController {
     }
 
     @PostMapping
-    @ResponseStatus(HttpStatus.CREATED) // instruir code 201
+    @ResponseStatus(HttpStatus.CREATED) // instruir para retorna status code 201 por defaul java gera code 200
     public MessageResponseDTO createPerson(@RequestBody Person person) {
         return personService.create(person);
     }
