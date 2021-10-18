@@ -23,10 +23,10 @@ public class Person implements Serializable {
     @Column(nullable = true) // obrigatório pra ser obg coloca false ///
     private String firstName;
 
-    @Column(nullable = true) // obrigatório
+    @Column(nullable = true) // obrigatório coloca false
     private String lastName;
 
-    @Column(nullable = true, unique = true) // obrigatório e unico
+    @Column(nullable = true, unique = true) // obrigatório coloca false e unico
     private String cpf;
 
     private LocalDate birthDate;
